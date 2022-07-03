@@ -1,0 +1,26 @@
+*TDD - Test Driven Development(Desenvolvimento guiado a testes)
+
+Fluxo TDD:
+    - RED : Escrever um teste que falhe;
+    - GREEN : Escrever um codigo para passar no teste;
+    - REFATORAR : Eliminar redundãncia.
+
+Teste em 4 Fases
+    -  Setup : coloca o SUT (system under test, o objeto sendo testado) no estado necessário para o teste;
+    - Exercise : Quando você interage com o SUT;
+    - Verify : Quando você verifica o comportamento esperado;
+    - Teardown : Quando você coloca o sistema no estado em que ele estava antes do teste ser executado.
+
+
+**RSpec - gem ruby para fazer testes.
+
+- spec (pasta) : pasta onde fica os arquivos de teste
+- rspec (arquivo) : run tests 
+- _spec : sulfixo para indentificar os arquivos de testes
+
+- describe : descrever os metodos a ser testados;
+- it, specify, example : descreve um metodo a ser testado;
+- expect (.to eq) : indicar o resultado do teste;
+- context : context para agrupar teste de um mesmo contexto;
+- subject (assunto): indicar o subject(assunto) da classe que esta no describe desse teste. 
+- xit : forma de pular o teste durante a execução, deixando pedente 

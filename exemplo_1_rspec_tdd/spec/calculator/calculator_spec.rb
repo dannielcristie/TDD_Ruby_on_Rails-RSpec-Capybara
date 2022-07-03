@@ -1,18 +1,20 @@
 require "calculator"
 
 describe Calculator do
-  it "use sum method for 2 numbers" do
-    #Etapa de setup
-    calc = Calculator.new
-    #Etapa de exercise
-    result = calc.sum(5, 7)
-    #Etapa de verify
-    expect(result).to eq(12)
-  end
+  context "#sum" do # '#' para indicar metodo de instancia
+    it "positive numbers" do
+      result = subject.sum(5, 7)
+      expect(result).to eq(12)
+    end
 
-  it "use sum method for 2 numbers with negative numbers" do
-    calc = Calculator.new
-    result = calc.sum(-5, 7)
-    expect(result).to eq(2)
+    it "negative and positive numbers" do
+      result = subject.sum(-5, 7)
+      expect(result).to eq(2)
+    end
+
+    xit "negative numbers" do
+      result = subject.sum(-5, -7)
+      expect(result).to eq(-12)
+    end
   end
 end
