@@ -22,5 +22,7 @@ Teste em 4 Fases
 - it, specify, example : descreve um metodo a ser testado;
 - expect (.to eq) : indicar o resultado do teste;
 - context : context para agrupar teste de um mesmo contexto;
-- subject (assunto): indicar o subject(assunto) da classe que esta no describe desse teste. 
-- xit : forma de pular o teste durante a execução, deixando pedente 
+- subject (assunto): indicar o subject(assunto) da classe que esta no describe desse teste.
+    -subject implicito: O subject instaciado automaticamente pelo describe
+    -subject explicito: O subject é sobreescrito e pode tambem usar o parametros.
+       'subject(:subject) { described_class.new(1,2,3)} '
