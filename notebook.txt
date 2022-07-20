@@ -30,10 +30,22 @@ Teste em 4 Fases
 
 # Matchers:
 - Matchers de Igualdade: 
-   - equal/be = Testa a Igualdade entre objetos
-   - eql/eq = Testa o centeudo/valor
+   - equal/be : Testa a Igualdade entre objetos
+   - eql/eq : Testa o centeudo/valor
 
 - Matchers Verdadeiro / Falso: 
-   - be true/ be_truthy = Testa se uma condição é Verdadeira
-   - be false / be_falsey = Testa se uma condição é Falsa
-   - be_nil = Testa se uma condição é Nil
+   - be true/ be_truthy : Testa se uma condição é Verdadeira
+   - be false / be_falsey : Testa se uma condição é Falsa
+   - be_nil : Testa se uma condição é Nil
+
+- Matchers de Comparaçaõ: 
+   - be > : Testa se um valor é maior que outro
+   - be >= : Testa se um valor é maior ou igual que outro
+   - be < : Testa se um valor é menor que outro
+   - be <= : Testa se um valor é menor ou igual que outro
+
+   -between(min,max).inclusive : Testa se o valor esta dentro do intervalo, incluindo as extremidades do intervalos
+   -between(min,max).exclusive : Testa se o valor esta dentro do intervalo, excluindo as extremidades do intervalos
+   -match(/regex/) : Testa o regex
+   -start_with(x): Testa se o valor/conteudo começa com a condição passado no parametro.
+   -end_with(x): Testa se o valor/conteudo termina com a condição passado no parametro.
