@@ -29,6 +29,11 @@ Teste em 4 Fases
 
 
 # Matchers:
-- Matchers de Igualdade:
+- Matchers de Igualdade: 
    - equal/be = Testa a Igualdade entre objetos
    - eql/eq = Testa o centeudo/valor
+
+- Matchers Verdadeiro / Falso: 
+   - be true/ be_truthy = Testa se uma condição é Verdadeira
+   - be false / be_falsey = Testa se uma condição é Falsa
+   - be_nil = Testa se uma condição é Nil
