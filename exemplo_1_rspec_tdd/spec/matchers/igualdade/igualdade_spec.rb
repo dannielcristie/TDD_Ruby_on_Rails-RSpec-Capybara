@@ -1,5 +1,5 @@
-describe "Mathers de Comparação" do
-  context "Comparação" do
+describe "Mathers de Igualdade" do
+  context "Igualdade" do
     it "#equal - Testa se é o mesmo objeto" do
       x = "ruby"
       y = "ruby"
