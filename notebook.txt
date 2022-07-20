@@ -49,3 +49,9 @@ Teste em 4 Fases
    -match(/regex/) : Testa o regex
    -start_with(x): Testa se o valor/conteudo começa com a condição passado no parametro.
    -end_with(x): Testa se o valor/conteudo termina com a condição passado no parametro.
+
+- Matchers de Classes
+    - be_instance_of(parametro) : Testa se o valor /conteudo é da classe passado como parametro
+    - be_kind_of(parametro) : Testa se o valor /conteudo é da classe de herança passado como parametro
+    - be_an / be_a : alias semantico para be_kind_of
+    - respond_to(:method): testa o objeto tem o metodo 
