@@ -64,4 +64,14 @@ Matcher Predicados
    - São metodos que usam os metodos predicados do Ruby, apenas como se fosse alias.
    ex :  2.old => be_odd
          1.old => be_even
-         1.positice => be_positive            
+         1.positice => be_positive
+
+Matchers de Erros: São matchers para verifica o erro lancado
+   - raise_error : testa o erro, mas gerar um warning
+   - raise_error(erro_type) : testa o erro
+   - raise_error(erro_message) : testa o erro
+   - raise_error(erro_type,erro_message) : testa o erro
+   - raise_error(/regExp/) : testa o erro
+
+      *no "expect{ ubject}", deve se usa um bloco
+"
