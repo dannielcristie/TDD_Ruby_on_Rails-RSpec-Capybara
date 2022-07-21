@@ -54,4 +54,8 @@ Teste em 4 Fases
     - be_instance_of(parametro) : Testa se o valor /conteudo é da classe passado como parametro
     - be_kind_of(parametro) : Testa se o valor /conteudo é da classe de herança passado como parametro
     - be_an / be_a : alias semantico para be_kind_of
-    - respond_to(:method): testa o objeto tem o metodo 
+    - respond_to(:method): testa o objeto tem o metodo passado como parametro
+   
+Matcher de Atributos
+   - have_attributes(atrributes) :  testa se o objeto tem o atributo passado como parametro,
+               podendo ser filtrado com otros matchers
