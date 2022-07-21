@@ -59,3 +59,9 @@ Teste em 4 Fases
 Matcher de Atributos
    - have_attributes(atrributes) :  testa se o objeto tem o atributo passado como parametro,
                podendo ser filtrado com otros matchers
+
+Matcher Predicados
+   - São metodos que usam os metodos predicados do Ruby, apenas como se fosse alias.
+   ex :  2.old => be_odd
+         1.old => be_even
+         1.positice => be_positive            
