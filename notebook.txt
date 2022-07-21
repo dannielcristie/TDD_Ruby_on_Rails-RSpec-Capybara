@@ -18,7 +18,7 @@ Teste em 4 Fases
 - rspec (arquivo) : run tests 
 - _spec : sulfixo para indentificar os arquivos de testes
 
-- describe : descrever os metodos a ser testados;
+- describe : descrever os metodos a ser testados  
 - it, specify, example : descreve um metodo a ser testado;
 - expect (.to eq) : indicar o resultado do teste;
 - context : context para agrupar teste de um mesmo contexto;

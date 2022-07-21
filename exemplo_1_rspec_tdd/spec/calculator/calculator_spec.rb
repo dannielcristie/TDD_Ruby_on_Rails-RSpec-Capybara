@@ -1,6 +1,6 @@
 require "calculator"
 
-describe Calculator do
+RSpec.describe Calculator do
   context "#sum" do # '#' para indicar metodo de instancia
     it "positive numbers" do
       result = subject.sum(5, 7)
