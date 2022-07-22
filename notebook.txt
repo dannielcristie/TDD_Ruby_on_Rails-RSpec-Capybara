@@ -73,5 +73,9 @@ Matchers de Erros: São matchers para verifica o erro lancado
    - raise_error(erro_type,erro_message) : testa o erro
    - raise_error(/regExp/) : testa o erro
 
-      *no "expect{ ubject}", deve se usa um bloco
-"
+      *no "expect{ ubject}", deve se usa um bloco"
+
+Matchers para Arrays
+   - include(elemet): vericar se tem os elementos no array
+   - contain_exactly(elemets): vericar se tem os exatos elementos no array
+   - match_array([array]): vericar se é o mesmos array
