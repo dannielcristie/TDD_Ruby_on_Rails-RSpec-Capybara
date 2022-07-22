@@ -76,6 +76,9 @@ Matchers de Erros: São matchers para verifica o erro lancado
       *no "expect{ ubject}", deve se usa um bloco"
 
 Matchers para Arrays
-   - include(elemet): vericar se tem os elementos no array
-   - contain_exactly(elemets): vericar se tem os exatos elementos no array
+   - include(element): vericar se tem os elementos no array
+   - contain_exactly(elements): vericar se tem os exatos elementos no array
    - match_array([array]): vericar se é o mesmos array
+
+Matcher para Ranges
+   - cover(elements): verificar se o/os elemento/s esta no intervalo(range)
