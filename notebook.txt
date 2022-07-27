@@ -27,6 +27,8 @@ Teste em 4 Fases
     -subject explicito: O subject é sobreescrito e pode tambem usar o parametros.
        'subject(:subject) { described_class.new(1,2,3)}'
 
+- composição de expectativa:
+   - or e and
 
 # Matchers:
 - Matchers de Igualdade: 
