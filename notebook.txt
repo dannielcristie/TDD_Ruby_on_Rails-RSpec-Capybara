@@ -84,3 +84,5 @@ Matchers para Arrays
 
 Matcher para Ranges
    - cover(elements): verificar se o/os elemento/s esta no intervalo(range)
+Matcher All
+   - all : testa todos os elementos de uma coleção (array, hash)
