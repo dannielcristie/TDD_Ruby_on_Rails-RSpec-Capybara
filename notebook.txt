@@ -90,3 +90,6 @@ Matcher All
 
 Matcher para numeros decimais(ponto flutuante)
    - be_within(margem).of(referencia) : vericar a margem de um numero com ponto flutuante para mais e para menos.
+
+Matcher satisfy
+   - satisfy(descricao do teste) {bloco de codigo}: matcher para criar sua propria expressão pra testar.
