@@ -23,12 +23,20 @@ Teste em 4 Fases
 - expect (.to eq) : indicar o resultado do teste;
 - context : context para agrupar teste de um mesmo contexto;
 - subject (assunto): indicar o subject(assunto) da classe que esta no describe desse teste.
-    -subject implicito: O subject instaciado automaticamente pelo describe
-    -subject explicito: O subject é sobreescrito e pode tambem usar o parametros.
+    - subject implicito: O subject instaciado automaticamente pelo describe
+    - subject explicito: O subject é sobreescrito e pode tambem usar o parametros.
        'subject(:subject) { described_class.new(1,2,3)}'
 
 - composição de expectativa:
    - or e and
+
+# Helper method: São metodo que são usandos nos testes.
+   - Helper metodos Arbitrarios :  Metodo no mesmo arquivo do teste(_spec)
+   - Helper metodos de Modulo :  Metodo em arquivos diferente (modularizado),
+      * o metodo pode ser definido em outro arquivo e importado(require )
+      * ou pode ser definido em um unico local, importado(require_relative) e definido como padrão no arquivo 'spec_helper.rb'
+         = config.include [modulo]
+
 
 # Matchers:
 - Matchers de Igualdade: 
@@ -46,11 +54,11 @@ Teste em 4 Fases
    - be < : Testa se um valor é menor que outro
    - be <= : Testa se um valor é menor ou igual que outro
 
-   -between(min,max).inclusive : Testa se o valor esta dentro do intervalo, incluindo as extremidades do intervalos
-   -between(min,max).exclusive : Testa se o valor esta dentro do intervalo, excluindo as extremidades do intervalos
-   -match(/regex/) : Testa o regex
-   -start_with(x): Testa se o valor/conteudo começa com a condição passado no parametro.
-   -end_with(x): Testa se o valor/conteudo termina com a condição passado no parametro.
+   - between(min,max).inclusive : Testa se o valor esta dentro do intervalo, incluindo as extremidades do intervalos
+   - between(min,max).exclusive : Testa se o valor esta dentro do intervalo, excluindo as extremidades do intervalos
+   - match(/regex/) : Testa o regex
+   - start_with(x): Testa se o valor/conteudo começa com a condição passado no parametro.
+   - end_with(x): Testa se o valor/conteudo termina com a condição passado no parametro.
 
 - Matchers de Classes
     - be_instance_of(parametro) : Testa se o valor /conteudo é da classe passado como parametro
@@ -74,8 +82,7 @@ Matchers de Erros: São matchers para verifica o erro lancado
    - raise_error(erro_message) : testa o erro
    - raise_error(erro_type,erro_message) : testa o erro
    - raise_error(/regExp/) : testa o erro
-
-      *no "expect{ ubject}", deve se usa um bloco"
+      *no "expect{ object}", deve se usa um bloco"
 
 Matchers para Arrays
    - include(element): vericar se tem os elementos no array
