@@ -39,6 +39,18 @@ Teste em 4 Fases
       * :aggregate_failures = true
 
 
+- Shared Examples (teste compartilhados) : Forma de evitar teste repetitivos, fazendo um padrão e apenas utilizando.
+   - dever ser declarado antes do describe, desta forma:
+      * shared_examples <nome do teste compartilhado></nome> do |param|
+            [teste] 
+         end
+
+   - para invocar o teste compartilhado use :
+      - include_examples <nome do testes compartilhado>, <params>: apenas executar sem saida semantica
+      - it_behaves_like <nome do testes compartilhado>, <params>: apenas executar com saida semantica
+      - it_should_behave_like <nome do testes compartilhado>, <params>: apenas executar com saida semantica
+
+
 # Helper method: São metodo que são usandos nos testes.
    - Helper metodos Arbitrarios :  Metodo no mesmo arquivo do teste(_spec)
    - Helper metodos de Modulo :  Metodo em arquivos diferente (modularizado),
