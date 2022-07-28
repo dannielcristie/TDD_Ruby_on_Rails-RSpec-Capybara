@@ -36,7 +36,10 @@ Teste em 4 Fases
       * o metodo pode ser definido em outro arquivo e importado(require )
       * ou pode ser definido em um unico local, importado(require_relative) e definido como padrão no arquivo 'spec_helper.rb'
          = config.include [modulo]
-
+   - let : Serve para atribuir uma variavel  de instancia no teste, sem precisar do hook before,
+         é carregado quando é invocado pelo primeira vez no teste
+         let
+   - let! : Serve para atribuir uma variavel  de instancia no teste, força a invocação no inicio do teste, como no hook before,
 
 # Matchers:
 - Matchers de Igualdade: 
