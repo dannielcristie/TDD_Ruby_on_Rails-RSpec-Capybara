@@ -2,17 +2,27 @@ require "pessoa"
 
 describe "Matcher de Atributos de classe" do
   context "Atributos de classe" do
-    before(:each) do
+    # before(:each) do
+    #   @pessoa = Pessoa.new
+    #   p ">>>> Instanciando objeto <<<<<"
+    # end
+
+    # after(:each) do
+    #   @pessoa.nome = "Sem nome!"
+    #   p ">>>>>> #{@pessoa.nome} <<<<<<<<"
+    # end
+
+    around(:each) do |teste|
       @pessoa = Pessoa.new
       p ">>>> Instanciando objeto <<<<<"
-    end
 
-    after(:each) do
+      teste.run
+
       @pessoa.nome = "Sem nome!"
       p ">>>>>> #{@pessoa.nome} <<<<<<<<"
     end
 
-    it "have_attributes I " do
+    it "have_attributes I" do
       @pessoa.nome = "Danniel"
       @pessoa.idade = 25
 

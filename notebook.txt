@@ -134,3 +134,14 @@ Hooks before e after: são ações(instancia um objeto, limpar um DB, etc.) para
             before/after(:each/:example) do
                [açoes] 
             end
+
+Hooks around : formar generica do before/after(:each/:example) ou before/after(:all/context)
+
+       * around(:each/:example ou :all/:context) do |teste|
+            [ações antes do testes]
+
+            teste.run (dispara o teste)
+
+            [ações depois do testes]
+         end
+         
