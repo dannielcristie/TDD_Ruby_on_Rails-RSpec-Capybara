@@ -42,6 +42,11 @@ Teste em 4 Fases
    - let! : Serve para atribuir uma variavel  de instancia no teste, força a invocação no inicio do teste, como no hook before,
 
 # Matchers:
+
+- Negativando matchers: mudar o matcher para negativo, ao inves do usar expect().not_to
+   no arquivo de teste(_spec) insira:
+      * RSpec::Matchers.define_negated_matcher :<nome do novo matcher >,:<nome do matcher original que sera negado> 
+
 - Matchers de Igualdade: 
    - equal/be : Testa a Igualdade entre objetos
    - eql/eq : Testa o centeudo/valor
