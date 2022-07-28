@@ -100,3 +100,37 @@ Matcher para numeros decimais(ponto flutuante)
 
 Matcher satisfy
    - satisfy(descricao do teste) {bloco de codigo}: matcher para criar sua propria expressão pra testar.
+
+
+
+# Hooks: 
+
+Hooks before e after: são ações(instancia um objeto, limpar um DB, etc.) para serem feitas antes ou depois dos testes
+
+   - before(:suite)/ after(:suite): executar ações antes ou depois de TODA A SUITE DE TESTES
+        * deve esta no arquivo 'spec_helper.rb'
+            config.before/after(:suite) do
+               [açoes] 
+            end
+
+   - before(:all/context)/ after(:all/context): executar ações antes ou depois de TODOS OS TESTES 
+        * pode esta no arquivo 'spec_helper.rb':
+            config.before/after(:all/context) do
+               [açoes] 
+            end
+        
+        * pode esta no arquivo do teste '_spec.rb' :
+            before/after(:all/context) do
+               [açoes] 
+            end
+         
+   - before(:each/:example)/ after(:each/:example): executar ações antes ou depois de CADA TESTE
+        * pode esta no arquivo 'spec_helper.rb':
+            config.before/after(:each/:example) do
+               [açoes] 
+            end
+        
+        * pode esta no arquivo do teste '_spec.rb' :  
+            before/after(:each/:example) do
+               [açoes] 
+            end

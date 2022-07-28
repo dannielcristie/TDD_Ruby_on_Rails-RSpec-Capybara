@@ -14,9 +14,24 @@
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
-require_relative '../helpers/helper'
+require_relative "../helpers/helper"
 
 RSpec.configure do |config|
+  config.before(:suite) do
+    p ">>>>>>> ANTES DE TODA A SUITE DE TESTE <<<<<<<<<"
+  end
+
+  config.after(:suite) do
+    p ">>>>>>> ANTES DE TODA A SUITE DE TESTE <<<<<<<<<"
+  end
+
+  config.before(:context) do
+    p ">>>>>>> ANTES DE TODOS OS TESTE <<<<<<<<<"
+  end
+
+  config.after(:all) do
+    p ">>>>>>> ANTES DE TODOS OS TESTE <<<<<<<<<"
+  end
 
   #method frutas
   config.include Helper
@@ -51,8 +66,8 @@ RSpec.configure do |config|
   # triggering implicit auto-inclusion in groups with matching metadata.
   config.shared_context_metadata_behavior = :apply_to_host_groups
 
-# The settings below are suggested to provide a good initial experience
-# with RSpec, but feel free to customize to your heart's content.
+  # The settings below are suggested to provide a good initial experience
+  # with RSpec, but feel free to customize to your heart's content.
 =begin
   # This allows you to limit a spec run to individual examples or groups
   # you care about by tagging them with `:focus` metadata. When nothing
