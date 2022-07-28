@@ -30,6 +30,15 @@ Teste em 4 Fases
 - composição de expectativa:
    - or e and
 
+- falhas agregadas: evitar que o fluxo de testes seja interropido na primeira falha encontrado, assim executando todos os testes e depois exibir todas as falhas
+   - para toda a suite: basta inserir no spec_helper.rb
+      *  config.define_derivated_metadata do |meta|
+            meta[:aggregate_failures] = true
+         end  
+   - Para um unico teste, add na descrição do teste (it)
+      * :aggregate_failures = true
+
+
 # Helper method: São metodo que são usandos nos testes.
    - Helper metodos Arbitrarios :  Metodo no mesmo arquivo do teste(_spec)
    - Helper metodos de Modulo :  Metodo em arquivos diferente (modularizado),
