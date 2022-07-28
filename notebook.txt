@@ -104,6 +104,10 @@ Matcher para numeros decimais(ponto flutuante)
 Matcher satisfy
    - satisfy(descricao do teste) {bloco de codigo}: matcher para criar sua propria expressão pra testar.
 
+Matcher change 
+   - change :  detecta se houve alteração no teste
+   - change.by(x) :  detecta se houve alteração, e o como foi alterado no teste
+   - change.from(y).to(x) :  detecta se houve alteração, como era antes de altera e como ficara depois da alteração no teste 
 
 
 # Hooks: 
