@@ -17,21 +17,21 @@
 require_relative "../helpers/helper"
 
 RSpec.configure do |config|
-  config.before(:suite) do
-    p ">>>>>>> ANTES DE TODA A SUITE DE TESTE <<<<<<<<<"
-  end
+  # config.before(:suite) do
+  #   p ">>>>>>> ANTES DE TODA A SUITE DE TESTE <<<<<<<<<"
+  # end
 
-  config.after(:suite) do
-    p ">>>>>>> ANTES DE TODA A SUITE DE TESTE <<<<<<<<<"
-  end
+  # config.after(:suite) do
+  #   p ">>>>>>> ANTES DE TODA A SUITE DE TESTE <<<<<<<<<"
+  # end
 
-  config.before(:context) do
-    p ">>>>>>> ANTES DE TODOS OS TESTE <<<<<<<<<"
-  end
+  # config.before(:context) do
+  #   p ">>>>>>> ANTES DE TODOS OS TESTE <<<<<<<<<"
+  # end
 
-  config.after(:all) do
-    p ">>>>>>> ANTES DE TODOS OS TESTE <<<<<<<<<"
-  end
+  # config.after(:all) do
+  #   p ">>>>>>> ANTES DE TODOS OS TESTE <<<<<<<<<"
+  # end
 
   #method frutas
   config.include Helper

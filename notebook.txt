@@ -109,6 +109,12 @@ Matcher change
    - change.by(x) :  detecta se houve alteração, e o como foi alterado no teste
    - change.from(y).to(x) :  detecta se houve alteração, como era antes de altera e como ficara depois da alteração no teste 
 
+Matcher output : testa se foi enviado um mensagem para saida padrão(stdout) ou a saida de erro padrão(stderr)
+   -output('foo').stdout : testa com texto 
+   -output(/foo/).stdout : testa com regex
+
+   -output('foo').stderr : testa com texto   
+   -output(/foo/).stderr : testa com regex
 
 # Hooks: 
 
