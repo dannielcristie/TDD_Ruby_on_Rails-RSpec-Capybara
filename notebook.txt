@@ -142,6 +142,27 @@ Matcher output : testa se foi enviado um mensagem para saida padrão(stdout) ou 
    -output('foo').stderr : testa com texto   
    -output(/foo/).stderr : testa com regex
 
+- Custom matcher
+   - invocar antes do teste: 
+      * RSpec::Matchers.define :be_a_multiple_of do |expected| # paramentos 
+            #teste do matcher
+            match do |actual|
+               actual % expected == 0
+            end
+
+            #messagem de falha
+            failure_message do |actual|
+               "expect that #{actual} would be a multiple of  #{expected}"
+            end
+
+            # messagem de sucesso
+            description do
+               "#{actual} be a multiple of #{expected}"
+            end
+         end
+
+
+
 # Hooks: 
 
 Hooks before e after: são ações(instancia um objeto, limpar um DB, etc.) para serem feitas antes ou depois dos testes
