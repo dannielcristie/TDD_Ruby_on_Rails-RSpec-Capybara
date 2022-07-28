@@ -50,6 +50,13 @@ Teste em 4 Fases
       - it_behaves_like <nome do testes compartilhado>, <params>: apenas executar com saida semantica
       - it_should_behave_like <nome do testes compartilhado>, <params>: apenas executar com saida semantica
 
+- Tag Filter : forma de filtrar ou agrupar testes na hora da execução
+   - <nome do filtro/>grupo>: true /:<nome do filtro/grupo> : depois do titulo do teste(it) 
+   - <type>:<nome do filtro/grupo> : depois do titulo do teste(it)
+   - <:nome do filtro/grupo> (symbol) : depois do titulo do teste(it)
+
+   - na execução 
+      * rspec -t/--tag <nome do filtro/grupo>
 
 # Helper method: São metodo que são usandos nos testes.
    - Helper metodos Arbitrarios :  Metodo no mesmo arquivo do teste(_spec)
