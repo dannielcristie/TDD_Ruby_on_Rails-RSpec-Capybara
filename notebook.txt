@@ -69,6 +69,17 @@ Teste em 4 Fases
          let
    - let! : Serve para atribuir uma variavel  de instancia no teste, força a invocação no inicio do teste, como no hook before,
 
+- Test  Double: forma de criar objetos falsos pra fins de testes
+   * <variavel> = double(<Nome do Obj fake>)
+
+   - Para receber atributos:
+      * allow(<variavel>).to receive_messages(nome: "Danniel" , ...)
+         ou
+      * allow(<variavel>).to receive(:nome).and_return("Danniel")
+      
+
+
+
 # Matchers:
 
 - Negativando matchers: mudar o matcher para negativo, ao inves do usar expect().not_to
