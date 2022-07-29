@@ -77,6 +77,10 @@ Teste em 4 Fases
          ou
       * allow(<variavel>).to receive(:nome).and_return("Danniel")
       
+   - as_null_object : forma de remover um erro de objeto fake por não ter sido atribuito
+      * <variavel> = double(<Nome do Obj fake>).as_null_object
+
+
 - Stubs : forma de força uma resposta especifica de um metodo de um objeto que esta sendo usado no teste, objeto fake(double teste) ou objeto real
    *     allow(<instancia do objeto>).to receive(:<metodo para força a resposta>)
                         .with(an_instance_of(< instancia de objeto que esta sendo usado com paramentro >))
