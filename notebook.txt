@@ -83,6 +83,10 @@ Teste em 4 Fases
                         .and_return(<resposta desejada>)
       - with(<params do metodo>)
       - an_instance_of(qual tipo de objeto esta sendo usando como params)
+      - Argumentos dinamicos
+      -Qualquer instacia de classe
+      -Erros
+
 
 # Matchers:
 
