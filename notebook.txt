@@ -87,6 +87,10 @@ Teste em 4 Fases
       -Qualquer instacia de classe
       -Erros
 
+- Mocks : São usados para a fase de verify do teste, testando o comportamento de um metodo
+      * expect(<instancia do objeto>).to receive(:<metodo para verifica o comportamento>)
+
+
 
 # Matchers:
 
