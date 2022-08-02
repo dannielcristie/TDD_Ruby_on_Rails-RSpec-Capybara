@@ -1,3 +1,9 @@
 # Factory Bot
 
 - Gem Faker: para gera info fake para fazer testes.
+
+- Sobrescrita de atributos : sobrescrever um atributo fake 
+    * customer = create(:customer, name: "Danniel")
+
+- Aliases : permitir usar uma mesma factory para um outro objeto
+    * factory :customer, aliases: [:user, father]
