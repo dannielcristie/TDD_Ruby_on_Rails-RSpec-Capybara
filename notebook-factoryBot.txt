@@ -1,1 +1,3 @@
 # Factory Bot
+
+- Gem Faker: para gera info fake para fazer testes.
