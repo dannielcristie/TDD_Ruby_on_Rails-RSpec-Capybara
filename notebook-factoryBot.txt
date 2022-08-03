@@ -26,3 +26,7 @@
     * factory :customer_male, traits: [:male]
 
 - Callbacks : executar acões antes do create ou depois do create e build
+
+- Sequences : Criar sequencias numericas ou objeto com metodo next(string, integer) no Factory Bot
+    * sequence(:email, "a") { |n| "meu_email-#{n}@email.com" }
+    
