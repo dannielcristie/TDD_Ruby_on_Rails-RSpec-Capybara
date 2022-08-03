@@ -11,4 +11,10 @@
 - Attributes_for : extrair os atributos de determinada Factory
     * attrs = attributes_for(:customer)
 
+- Transient Attributes (Atributo Transitorio): criar atributos opcionais em uma  Factory
+    -  deve ser declarado na factory
+    *   transient do
+            upcased { false }
+        end
+
 - Herança : 
