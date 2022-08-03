@@ -3,9 +3,6 @@ require "rails_helper"
 RSpec.describe Customer, type: :model do
   it "#full_name - Sobrescrevendo Atributos" do
     customer = create(:customer, name: "Danniel")
-    customer1 = create(:customer, name: "Danniel")
-    p customer.email
-    p customer1.email
     expect(customer.full_name).to eq("Sr. Danniel")
   end
 

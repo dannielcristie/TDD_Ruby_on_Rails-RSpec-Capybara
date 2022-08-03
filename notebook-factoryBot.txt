@@ -30,3 +30,5 @@
 - Sequences : Criar sequencias numericas ou objeto com metodo next(string, integer) no Factory Bot
     * sequence(:email, "a") { |n| "meu_email-#{n}@email.com" }
     
+-Associações: Associações entre models atraves factories 
+    - belongs_to: associação 1:1
