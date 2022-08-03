@@ -8,6 +8,8 @@
 - Aliases : permitir usar uma mesma factory para um outro objeto
     * factory :customer, aliases: [:user, father]
 
+- Herança : factory dentro de uma factory
+
 - Attributes_for : extrair os atributos de determinada Factory
     * attrs = attributes_for(:customer)
 
@@ -17,4 +19,9 @@
             upcased { false }
         end
 
-- Herança : 
+- Traits: agrupamento de atributos para forma novas factories
+    * trait :male do
+        gender { "M" }
+      end
+    * factory :customer_male, traits: [:male]
+
