@@ -25,3 +25,4 @@
       end
     * factory :customer_male, traits: [:male]
 
+- Callbacks : executar acões antes do create ou depois do create e build
