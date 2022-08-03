@@ -6,6 +6,16 @@ RSpec.describe Customer, type: :model do
     expect(customer.full_name).to eq("Sr. Danniel")
   end
 
+  it "#Herança -Vip" do
+    customer = create(:customer_vip)
+    expect(customer.vip).to eq(true)
+  end
+
+  it "# Herança - Default" do
+    customer = create(:customer_default)
+    expect(customer.vip).to eq(false)
+  end
+
   it "#full_name- usando aliases" do
     customer = create(:user) # ou create(:customer)
     expect(customer.full_name).to start_with("Sr. ")
