@@ -41,3 +41,6 @@
 
 - Modos de gravaçãop VCR (doc):
     https://relishapp.com/vcr/vcr/v/6-1-0/docs/record-modes
+
+-shoulda-matchers : gem para facilitar a criação de testes
+    https://github.com/thoughtbot/shoulda-matchers
