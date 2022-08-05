@@ -37,6 +37,8 @@ RSpec.describe Customer, type: :model do
     expect(customer.gender).to eq("F")
   end
 
+
+  
   it "Cliente_Feminino_default" do
     customer = create(:customer_female_default)
     expect(customer.gender).to eq("F")
