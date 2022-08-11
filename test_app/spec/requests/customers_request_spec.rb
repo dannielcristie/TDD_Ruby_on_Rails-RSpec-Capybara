@@ -20,6 +20,13 @@ RSpec.describe "Customers", type: :request do
       @customer = create(:customer)
     end
 
+    it "Content_Type JSON" do
+      customer_params = attributes_for(:customer)
+      sign_in @member
+      post "/customers", params: { customer: customer_params, format: :json }
+      expect(response.content_type).to match(/application\/json/)
+    end
+
     it "Flash Notice" do
       customer_params = attributes_for(:customer)
       sign_in @member
