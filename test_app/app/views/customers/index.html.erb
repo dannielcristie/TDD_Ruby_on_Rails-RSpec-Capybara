@@ -35,7 +35,12 @@
 <br/>
 <br/>
 <a href="#" id="my-link">Add Message</a> 
- <div id="my-div"></div>
+ <div id="my-div">
+    <h1>Yes!</h1>
+ </div>
+
+ <div id="my-div2">
+ </div>
 
 
 <script>
@@ -44,7 +49,7 @@
     $link.addEventListener('click', function(e){
         e.preventDefault();
         setTimeout(function(){
-            document.querySelector("#my-div").innerHTML = "<h1>Yes!</h1>"
+            document.querySelector("#my-div2").innerHTML = "<h1>Yes !!</h1>"
         }, 1000);
     },false)
 </script>
