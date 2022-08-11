@@ -42,7 +42,7 @@ group :development, :test do
   gem "httparty"
   gem "webmock"
   gem "vcr"
-  gem "shoulda-matchers"
+  gem "shoulda-matchers", "~> 5.0"
   gem "rails-controller-testing"
 end
 

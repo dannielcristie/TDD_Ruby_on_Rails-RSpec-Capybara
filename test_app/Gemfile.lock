@@ -280,7 +280,7 @@ DEPENDENCIES
   rails-controller-testing
   rspec-rails (~> 4.0.1)
   sass-rails (>= 6)
-  shoulda-matchers
+  shoulda-matchers (~> 5.0)
   spring
   spring-commands-rspec
   spring-watcher-listen (~> 2.0.0)

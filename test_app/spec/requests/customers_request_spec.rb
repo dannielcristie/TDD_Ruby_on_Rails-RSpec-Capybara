@@ -20,6 +20,10 @@ RSpec.describe "Customers", type: :request do
       @customer = create(:customer)
     end
 
+    # it "Route" do
+    #   is_expect_to route(:get, "/customers/").to(action: :index)
+    # end
+
     it "Content_Type JSON" do
       customer_params = attributes_for(:customer)
       sign_in @member
@@ -40,6 +44,14 @@ RSpec.describe "Customers", type: :request do
       expect {
         post "/customers", params: { customer: customer_params }
       }.to change(Customer, :count).by(1)
+    end
+
+    it "with invalid attributes" do
+      customer_params = attributes_for(:customer, address: nil)
+      sign_in @member
+      expect {
+        post "/customers", params: { customer: customer_params }
+      }.not_to change(Customer, :count)
     end
 
     it "responds a 200 response" do
