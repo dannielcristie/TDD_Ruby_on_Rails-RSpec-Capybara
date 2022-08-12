@@ -81,6 +81,11 @@ RSpec.describe "Customers", type: :request do
       }.to change(Customer, :count).by(-1)
       expect(response).to have_http_status(204)
     end
+
+    it "JSON Schema" do
+      get "/customers/1.json"
+      expect(response).to match_response_schema("customer")
+    end
   end
 end
 0

@@ -109,6 +109,9 @@ GEM
     jbuilder (2.11.5)
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
+    json_matchers (0.11.1)
+      json_schema
+    json_schema (0.21.0)
     launchy (2.5.0)
       addressable (~> 2.7)
     listen (3.7.1)
@@ -287,6 +290,7 @@ DEPENDENCIES
   faker
   httparty
   jbuilder (~> 2.7)
+  json_matchers
   launchy
   listen (~> 3.3)
   net-imap

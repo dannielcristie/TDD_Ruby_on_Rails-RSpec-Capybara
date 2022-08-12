@@ -47,6 +47,7 @@ group :development, :test do
   gem "rspec-json_expectations"
   gem "capybara"
   gem "launchy"
+  gem "json_matchers"
 end
 
 group :development do
