@@ -35,9 +35,22 @@ feature "Customers", type: :feature do
 
   scenario "Não Cadastra um cliente invalido" do
     visit(new_customer_path)
-
     click_on("Criar Cliente")
-
     expect(page).to have_content("não pode ficar em branco")
+  end
+
+  scenario "Mostrar um cliente" do
+    customer = Customer.create!(
+      name: Faker::Name.name,
+      email: Faker::Internet.email,
+      phone: Faker::PhoneNumber.phone_number,
+      smoker: ["S", "N"].sample,
+      avatar: "#{Rails.root}/spec/fixtures/avatar.png",
+    )
+
+    visit(customer_path(customer.id))
+    expect(page).to have_content(customer.name)
+    expect(page).to have_content(customer.email)
+    expect(page).to have_content(customer.phone)
   end
 end
